@@ -13,7 +13,8 @@ public class implementaionStack {
 	
 		System.out.println("1)Push");
 		System.out.println("2)Display Linked List");
-		System.out.println("3)Exit");
+		System.out.println("3)Pop Element");
+		System.out.println("4)Exit");
 
 		
 		
@@ -26,14 +27,19 @@ public class implementaionStack {
 			stack.push(num);
 			
 		}
-		if (choice ==2 )
+		else if (choice ==2 )
 		{
 			stack.display();
 		}
+		else if (choice==3)
+		{
+			stack.popFirstElement();
+		}
+		
 		
 		System.out.println();
 		
-		}while(choice!=3);
+		}while(choice!=4);
 		
 	
 		
